@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Exercice_4</title>
-        <meta charset="UTF-8">
-    </head>
-    <body>
+<head>
+    <title>Exercice_4</title>
+    <meta charset="UTF-8">
+    <style>
+    img {width: 10%;}
 
-    </body>
+
+
+
+  </style>
+</head>
+<body>
+  <SCRIPT LANGUAGE="javascript">
+  function controle(formulaire) {
+  var name = formulaire.nom.value;
+  var firstname = formulaire.input.value;
+  var city = formulaire.ville.value;
+  alert("Bonjour " + "\n" + name + " " + firstname + "\n" + "de " + city );
+  }
+  </SCRIPT>
+
+<form name="formulaire">
+    <label for="nom">Nom : </label>
+    <input type="text" name="nom" value=""/>
+    <label for="prenom">Prénom : </label>
+    <input type="text" name="input" id="prenom" value=""/>
+    <label for="ville">Ville : </label>
+    <input type="text" name="ville" id="ville"  value=""/>
+    <input type="button" name="bouton" value="Valider" onClick="controle(formulaire)">
+</form>
+</body>
 </html>

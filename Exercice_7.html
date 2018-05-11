@@ -1,10 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Exercice_8</title>
+    <title>Exercice_7</title>
     <meta charset="UTF-8">
 </head>
 <body>
 
+<script type="text/javascript">
+  function controle(formulaire) {
+  var point = document.formulaire.pointure.value;
+  var birth = document.formulaire.birth.value;
+  var total = (point * 2 + 5 * 50 - birth + 1766);
+  alert("Le résultat est:" + "\n" + total);
+}
+</script>
+
+  <form name="formulaire">
+    <label for="pointure">Entrez votre pointure: </label>
+    <input type="text" name="pointure" value=""/>
+    <label for="birth">Votre année de naissance: </label>
+    <input type="text" name="birth" value="">
+    <input type="button" name="bouton" value="Valider" onclick="controle(formulaire)" >
+  </form>
 </body>
 </html>
