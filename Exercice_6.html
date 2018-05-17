@@ -6,10 +6,14 @@
     </head>
     <body>
       <SCRIPT LANGUAGE="javascript">
-      function controle(formulaire) {
+      function controle() {
       var age = formulaire.age.value
       if (age >= 18){
       alert("Vous êtes majeur !")
+      }
+      else if (age <0) {
+        alert("Donnée invalide !!")
+
       }
        else {
         alert("Vous êtes mineur !")
@@ -27,7 +31,7 @@
         <input type="text" name="ville" id="ville"  value=""/>
         <label for="age">Age : </label>
         <input type="text" name="age" id="ville"  value=""/>
-        <input type="button" name="bouton" value="Valider" onClick="controle(formulaire)">
+        <input type="button" name="bouton" value="Valider" onClick="controle()">
     </form>
       </script>
     <body>

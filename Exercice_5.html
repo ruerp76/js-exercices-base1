@@ -10,7 +10,16 @@
             <input type="text" id="premier_nombre" name="premier_nombre" value=""/>
             <label for="deuxieme_nombre">Deuxième nombre : </label>
             <input type="text" id="deuxieme_nombre" name="deuxieme_nombre" value=""/>
-            <button id="valider" name ="valider">Valider</button>
+            <button id="valider" onclick="validNumb()" name ="valider">Valider</button>
         </form>
+
+        <script type="text/javascript">
+          function validNumb(){
+            var number1 = document.getElementById("premier_nombre").value;
+            var number2 = document.getElementById("deuxieme_nombre").value;
+            var result = Math.trunc(number1) * number2;
+            alert(result);
+          }
+        </script>
     </body>
 </html>
